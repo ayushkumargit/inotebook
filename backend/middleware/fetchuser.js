@@ -6,7 +6,7 @@ const fetchuser = (req, res, next) => {
 
     const token = req.header("auth-token")
     if (!token) {
-        res.status(400).json({ error: "Please try to login with correct credentials" });
+        res.status(400).json({ error: "Please try to login with correct credentials " });
 
     }
     try {
@@ -15,7 +15,7 @@ const fetchuser = (req, res, next) => {
         next()
 
     } catch (error) {
-        res.status(400).json({ error: "Please try to login with correct credentials" });
+        res.status(400).json({ error: "Please try to login with correct credentials new change" });
 
 
     }
