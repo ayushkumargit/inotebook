@@ -1,13 +1,12 @@
 import React from "react"
-import AddNote from "./AddNote"
 import Notes from "./Notes"
-function Home() {
-
+function Home(props) {
+  const {showAlert} = props
   return (
     <>
     <div className="mx-3">
       <h1>your notes</h1>
-      <Notes/>
+      <Notes showAlert={showAlert}/>
     </div>
     </>
   )
